@@ -1,0 +1,70 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.responsive-image {
+  /* Default width for larger screens (e.g., desktops) */
+  width: 625px;
+  height: 615px;
+}
+
+@media (max-width: 900px) {
+  .responsive-image {
+    width: 625px;
+    height: 615px; /* Width for extra-small screens (xs) */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .responsive-image {
+    width: 625px;
+    height: 615px; /* Width for extra-small screens (xs) */
+  }
+}
+
+@media (max-width: 599px) {
+  .responsive-image {
+    width: 565px;
+    height: 515px; /* Width for extra-small screens (xs) */
+  }
+}
+
+
+/* Media query for extra-small screens (xs) */
+@media (max-width: 450px) {
+  .responsive-image {
+    width: 400px; /* Width for extra-small screens (xs) */
+    height:  415px;
+  }
+}
