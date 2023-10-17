@@ -49,7 +49,7 @@ const SECONDARY = {
 
 const ELEMENTRY = {
   lighter: "#CADCD0",
-  light: "#A9D4BA",
+  light: "#555555",
   dark: '#93B9A2',
   contrastText: '#FFFFFF',
 };
@@ -140,7 +140,7 @@ export const theme = createTheme({
       fontWeight: 600,
       lineHeight: 1.5,
       fontSize: pxToRem(18),
-      ...responsiveFontSizes({ sm: 19, md: 20, lg: 20 }),
+      ...responsiveFontSizes({ sm: 20, md: 23, lg: 26 }),
     },
     h6: {
       fontWeight: 600,
@@ -149,7 +149,7 @@ export const theme = createTheme({
       ...responsiveFontSizes({ sm: 17, md: 18, lg: 19 }),
     },
     subtitle1: {
-      fontWeight: 500,
+      fontWeight: 600,
       lineHeight: 1.5,
       fontSize: pxToRem(15),
     },

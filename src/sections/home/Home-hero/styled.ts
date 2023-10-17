@@ -1,4 +1,4 @@
-import { styled, Box, Typography, Card } from "@mui/material";
+import { styled, Box, Typography, Card, Stack } from "@mui/material";
 import Image from "next/image";
 import { theme } from "@/assets/theme/theme";
 
@@ -58,50 +58,29 @@ export const MainImage = styled(Image)(({ theme }) => ({
   bottom: "13px",
 }));
 
-export const TransparentBox = styled(Box)(({ theme }) => ({
-  backgroundColor: "yellow",
-  display: "flex",
-  //     flexDirection:{md:"row",xs:"column"},
-
-//   [theme.breakpoints.up("sm")]: {
-//     flexDirection: "row ",
-//   },
+export const RenderFoodStack = styled(Stack)(({ theme }) => ({
+  backgroundColor: "pink",
   [theme.breakpoints.down('md')]: {
-    // flexDirection: "column",
-    backgroundColor: "pink !important",
+    backgroundColor: "blue !important",
   },
-  //   justifySelf: "center",
 
-  //     width:{xl:"680px",lg:"680px",md:"670px",sm:"420px",xs:"340px"},
-  // [theme.breakpoints.up("xl")]: {
-  //    width:"620px"
-  //   },
-  //   [theme.breakpoints.up("lg")]: {
-  //     width:"680px"
-  //    },
-  //    [theme.breakpoints.down("md")]: {
-  //     width:"420px"
-  //    },
-
-  //     margin:{xs:"0 10px"},
   [theme.breakpoints.up("sm")]: {
     width: "690px",
   },
+
+  
   [theme.breakpoints.down("xs")]: {
     width: "420px",
   },
-  position: "absolute",
-  //   top:{xl:"620px",lg:"615px",md:"610px",sm:"1170px",xs:"1215px"},
+
   [theme.breakpoints.up("lg")]: {
     top: "620px",
   },
+
   [theme.breakpoints.down("md")]: {
     top: "1025px",
   },
-//   [theme.breakpoints.down("sm")]: {
-//     top: "1130px",
-//   },
-  //   left:{ xl:"50%",lg:"47%",md:"41%" ,sm:"14%",xs:"4%"}
+
 
   [theme.breakpoints.up("xl")]: {
     left: "55%",
@@ -118,9 +97,7 @@ export const TransparentBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const CBox1 = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "row",
+export const CBox1 = styled(Stack)(({ theme }) => ({
   backgroundColor: "white",
   boxShadow: "0px 7px 30px 0px rgba(0, 0, 0, 0.35)",
   padding: "15px",
