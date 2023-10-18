@@ -9,43 +9,38 @@ import TwitterIcon from "../../../public/Footer/🦆 icon _twitter_.svg";
 import YoutubeIcon from "../../../public/Footer/🦆 icon _youtube_.svg";
 import CRIcon from "../../../public/Footer/fi-rr-copyright.svg";
 import {
+  CopyRightStack,
+  FBImage,
+  FIStack,
+  FLogoBox,
   IStack,
+  InstaImage,
   LHTypography,
+  LImage1,
+  LImage2,
   LTypography,
   LiListItemButton,
   SMTypography,
+  TwitterImage,
+  YoutubeImage,
 } from "./styled";
 import Link from "next/link";
 
 const Footer = () => {
   return (
     <Box>
-      <Box >
+      <Box>
         <Grid container spacing={0}>
           <Grid item xl={4} lg={5} md={5} sm={6} xs={12}>
             <Stack sx={{ padding: "4% 6%" }}>
               <Stack direction="row">
-                <Box
-                  sx={{
-                    bgcolor: "#39DB4A",
-                    padding: "1% 2%",
-                    width: "20px",
-                    height: "30px",
-                    borderRadius: "8px",
-                  }}
-                >
-                  <Image src={Logo1} width={23} height={33} alt="" />
-                </Box>
-                <Image
-                  style={{ paddingTop: "7px" }}
-                  src={Logo2}
-                  width={75}
-                  height={30}
-                  alt=""
-                />
+                <FLogoBox>
+                  <LImage1 src={Logo1} alt="" />
+                </FLogoBox>
+                <LImage2 src={Logo2} alt="" />
               </Stack>
               <Box>
-                <SMTypography variant="h5" sx={{ pt: "15px" }}>
+                <SMTypography variant="h6" sx={{ pt: "15px" }}>
                   Savor the artistry where <br /> every dish is a culinary{" "}
                   <br /> masterpiece
                 </SMTypography>
@@ -155,54 +150,22 @@ const Footer = () => {
         <Grid container spacing={0}>
           <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
             <Link href="#">
-            <Stack
-              flex={1}
-              sx={{ margin: "5% 4%" }}
-              direction="row"
-            >
-              <Image
-                src={FBIcon}
-                width={23}
-                height={23}
-                alt=""
-                style={{
-                  marginRight: "20px",
-                  transition: "background-color 0.3s ease, border-radius 0.3s ease",
-                  cursor: "pointer",
-                }}
-                // sx={{
-                //   "&:hover": {
-                //     backgroundColor: "#39DB4A", 
-                //     borderRadius: "80px", //
-                //   },
-                // }}
-              />
-              <Image
-                src={InstaIcon}
-                width={26}
-                height={26}
-                alt=""
-                style={{ marginRight: "20px" }}
-              />
-              <Image
-                src={TwitterIcon}
-                width={26}
-                height={26}
-                alt=""
-                style={{ marginRight: "20px" }}
-              />
-              <Image src={YoutubeIcon} width={26} height={26} alt="" />
-            </Stack>
+              <FIStack flex={1} direction="row">
+                <FBImage src={FBIcon} alt="" />
+                <InstaImage src={InstaIcon} alt="" />
+                <TwitterImage src={TwitterIcon} alt="" />
+                <YoutubeImage src={YoutubeIcon} alt="" />
+              </FIStack>
             </Link>
           </Grid>
 
           <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
-            <Stack flex={4} sx={{  margin: "5% 2%" }}>
+            <CopyRightStack flex={4}>
               <Typography>
                 Copyright <Image src={CRIcon} width={17} height={17} alt="" />{" "}
                 2023 Dscode | All rights reserved
               </Typography>
-            </Stack>
+            </CopyRightStack>
           </Grid>
           <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
             <Stack flex={1}></Stack>

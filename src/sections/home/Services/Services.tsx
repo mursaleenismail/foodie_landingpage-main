@@ -11,8 +11,14 @@ import Icon2 from "../../../../public/Services/fi-rr-time-fast.svg";
 import Icon3 from "../../../../public/Services/fi-rr-shopping-cart-check.svg";
 import Icon4 from "../../../../public/Services/fi-rr-gift.svg";
 import ServiceCard from "@/Components/ServiceCrad/ServiceCard";
-import { BodyTypograpghy, HeadingTypograpghy, OSTypograpghy } from "./styled";
-import Button from "@mui/material/Button";
+import {
+  BodyTypograpghy,
+  ExpButton,
+  HeadingTypograpghy,
+  OCCard,
+  OSTypograpghy,
+} from "./styled";
+
 
 const Services = () => {
   return (
@@ -20,7 +26,7 @@ const Services = () => {
       <Box>
         <Grid container spacing={0}>
           <Grid item xl={6} lg={6} md={5} sm={6} xs={12}>
-            <Card  elevation={0} sx={{ padding: "7% 5%" }}>
+            <OCCard elevation={0}>
               <CardContent>
                 <OSTypograpghy variant="h6">Our Story & Services</OSTypograpghy>
 
@@ -28,37 +34,17 @@ const Services = () => {
                   Our Culinary Journey <br /> And Services
                 </HeadingTypograpghy>
                 <BodyTypograpghy>
-                  Rooted in passion, we curate unforgettable dining <br/> experiences
-                  and offer exceptional services, <br/> blending culinary artistry
-                  with warm hospitality.
+                  Rooted in passion, we curate unforgettable dining <br />{" "}
+                  experiences and offer exceptional services, <br /> blending
+                  culinary artistry with warm hospitality.
                 </BodyTypograpghy>
-                <Button
-                  variant="contained"
-                  size="large"
-                  sx={{
-                    margin: "20px 0px",
-                    borderRadius: "40px",
-                    width: "230px",
-                    fontSize: "22px",
-                    // height:"80px",
-                    backgroundColor: "#39DB4A",
-                    boxShadow: "0px 7px 30px 0px rgba(188, 255, 154, 4.80)",
-                    textTransform: "none",
-                    "&:hover": {
-                      backgroundColor: "#C1F1C6;",
-                      boxShadow: "0px 7px 30px 0px rgba(0, 0, 0, 0.95)",
-                      color: "green",
-                    },
-                  }}
-                >
+                <ExpButton variant="contained" size="large">
                   Explore
-                </Button>
+                </ExpButton>
               </CardContent>
-            </Card>
+            </OCCard>
           </Grid>
-
-          <Grid item xl={6} lg={6} md={7} sm={6} xs={12}>
-            {/* <Stack> */}
+          <Grid item xl={6} lg={6} md={7} sm={6} xs={12}> 
             <Stack>
               <Stack direction="row">
                 <ServiceCard

@@ -4,8 +4,6 @@ import HeroImage from "../../../../public/Home-HeroIcons/HomeHeroPic.png";
 import CardImage from "../../../../public/Home-HeroIcons/image 13 (1).png";
 import CardImage1 from "../../../../public/Home-HeroIcons/image 14 (1).png";
 import VideoImg from "../../../../public/Home-HeroIcons/Polygon 1.svg";
-import Star from "../../../../public/Home-HeroIcons/fi-sr-star.svg";
-import EmptyStar from "../../../../public/Home-HeroIcons/fi-br-star.svg";
 import Image from "next/image";
 import {
   Grid,
@@ -102,8 +100,11 @@ const HomeHero = () => {
             />
           </ImageBox>
 
-          <RenderFoodStack direction="row">
+          <RenderFoodStack  direction="column" 
+            // sx={{display:{sm:"block",xs:"none"}}}
+            >
             <RenderFoodCard
+          
               image={CardImage}
               title="Spicy noodles"
               price={18.0}

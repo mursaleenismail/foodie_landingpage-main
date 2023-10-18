@@ -4,7 +4,6 @@ import { theme } from "@/assets/theme/theme";
 
 export const LeftCard = styled(Card)(({ theme }) => ({
   margin: "0 20px",
-  // padding: "12%",
   [theme.breakpoints.down("xl")]: {
     padding: "18% 5%",
   },
@@ -34,7 +33,7 @@ export const ImageBox = styled(Box)(({ theme }) => ({
     width: "550px",
   },
   [theme.breakpoints.up("sm")]: {
-    width: "550px",
+    width: "250px",
   },
   [theme.breakpoints.down("sm")]: {
     width: "350px",
@@ -59,42 +58,57 @@ export const MainImage = styled(Image)(({ theme }) => ({
 }));
 
 export const RenderFoodStack = styled(Stack)(({ theme }) => ({
-  backgroundColor: "pink",
-  [theme.breakpoints.down('md')]: {
-    backgroundColor: "blue !important",
-  },
+  position: "absolute",
+  // display:"none",
 
+// WIDTH//
   [theme.breakpoints.up("sm")]: {
-    width: "690px",
+    width: "700px",
   },
 
-  
-  [theme.breakpoints.down("xs")]: {
+  [theme.breakpoints.down("sm")]: {
     width: "420px",
   },
 
-  [theme.breakpoints.up("lg")]: {
-    top: "620px",
-  },
-
-  [theme.breakpoints.down("md")]: {
-    top: "1025px",
-  },
-
-
+  //  ___LEFT////
   [theme.breakpoints.up("xl")]: {
     left: "55%",
   },
-
-  [theme.breakpoints.down("xl")]: {
-    left: "44%",
+  [theme.breakpoints.up("sm")]: {
+    left: "38%",
   },
   [theme.breakpoints.down("sm")]: {
     left: "0%",
   },
-  [theme.breakpoints.down("xs")]: {
-    left: "0%",
+
+
+  //  TOP ///
+  [theme.breakpoints.up("xl")]: {
+    top: "62%",
   },
+ 
+  [theme.breakpoints.down("lg")]: {
+    top: "62%",
+  },
+  [theme.breakpoints.down("md")]: {
+    top: "130%",
+  },
+  [theme.breakpoints.down("sm")]: {
+    left: "38%",
+  },
+  
+
+ 
+ 
+  
+  // DIRECTION//
+  [theme.breakpoints.up("sm")]: {
+    flexDirection: "row",
+  },
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+  },
+  
 }));
 
 export const CBox1 = styled(Stack)(({ theme }) => ({

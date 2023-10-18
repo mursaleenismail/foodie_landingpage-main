@@ -1,11 +1,9 @@
 import { styled, Box, Typography, Card, Stack } from "@mui/material";
 import Image from "next/image";
-import { theme } from "@/assets/theme/theme";
+import { COMMON, theme } from "@/assets/theme/theme";
 
-
-
-export const CBStack = styled(Stack)(({ theme }) => ({
-    backgroundColor: "white",
+export const CBStack = styled(Stack)(({theme}) => ({
+    backgroundColor:COMMON.common.white,
     boxShadow: "0px 7px 30px 0px rgba(0, 0, 0, 0.35)",
     padding: "15px",
     borderRadius: "25px",
@@ -20,7 +18,6 @@ export const CBStack = styled(Stack)(({ theme }) => ({
   
   export const TitleTypography = styled(Typography)(({ theme }) => ({
       marginBottom: "10px",
-     
       fontWeight: "850px",
     }));
   

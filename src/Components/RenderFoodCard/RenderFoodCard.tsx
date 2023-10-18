@@ -20,11 +20,12 @@ const RenderFoodCard =  ( {image,title,price}:RFCardProps) => {
              </TitleTypography>
           <Rating
       name="simple-controlled"
-      // value={value}
+      value={4}
+      sx={{ color: "#FFE605" }}
       // onChange={(event, newValue) => {
       //   setValue(newValue);
       // }}
-      icon={<StarIcon />}// Use your custom star icon component here
+      // icon={<StarIcon />}
     />
           <TitleTypography variant="h6">
             {" "}

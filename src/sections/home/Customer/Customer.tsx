@@ -10,10 +10,17 @@ import {
 } from "@mui/material";
 import React from "react";
 import {
+  AvatarBox,
+  AvatarStack,
   BodyTypograpghy,
+  CFStack,
+  CICardContent,
+  CSAvatar,
   CookImage,
   ImageBox,
   OCTypograpghy,
+  ReviewTypography,
+  SImage,
   TSTypograpghy,
 } from "./styled";
 import CookerImage from "../../../../public/Customers/CookImage.png";
@@ -25,30 +32,29 @@ import Image from "next/image";
 
 const Customer = () => {
   return (
-    <Box>
+    <Box sx={{margin:"30px 0px"}}>
       <Grid container spacing={1} sx={{ flexGrow: 1 }}>
-        <Grid item xl={6} lg={6} md={5} sm={6} xs={12}>
+        <Grid item xl={6} lg={6} md={5} sm={12} xs={12}>
           <Stack>
             <Card elevation={0}>
-              <CardContent sx={{ padding: "45% 0%",display:{sm:"block" ,xs:"none"} }}>
+              <CICardContent>
+                {" "}
                 <ImageBox>
                   <CookImage
                     //   className="responsive-image"
                     src={CookerImage}
-                    width={506}
-                    height={744}
                     alt=""
                   />
                 </ImageBox>
-              </CardContent>
+              </CICardContent>
             </Card>
           </Stack>
         </Grid>
 
-        <Grid item xl={6} lg={6} md={7} sm={6} xs={12}>
+        <Grid item xl={6} lg={6} md={7} sm={12} xs={12}>
           <Stack>
             <Card elevation={0}>
-              <CardContent sx={{ padding: "17% 0%",margin:"2% 5%" }}>
+              <CardContent sx={{ padding: "17% 0%", margin: "2% 5%" }}>
                 <TSTypograpghy variant="h6">Testimonials</TSTypograpghy>
                 <OCTypograpghy variant="h2">
                   What Our Customers <br /> Say About Us
@@ -59,46 +65,27 @@ const Customer = () => {
                   detail in presentation and service was impeccable”
                 </BodyTypograpghy>
 
-                <Stack direction="row">
-                  <Box>
+                <AvatarStack>
+                  <AvatarBox>
                     <AvatarGroup max={4}>
-                      <Avatar
-                        alt="Remy Sharp"
-                        src={Avatar01.src}
-                        sx={{ width: 60, height: 60 }}
-                      />
-                      <Avatar
-                        alt="Travis Howard"
-                        src={Avatar02.src}
-                        sx={{ width: 60, height: 60 }}
-                      />
-                      <Avatar
-                        alt="Cindy Baker"
-                        src={Avatar03.src}
-                        sx={{ width: 60, height: 60 }}
-                      />
+                      <CSAvatar alt="Remy Sharp" src={Avatar01.src} />
+                      <CSAvatar alt="Travis Howard" src={Avatar02.src} />
+                      <CSAvatar alt="Cindy Baker" src={Avatar03.src} />
                     </AvatarGroup>
-                  </Box>
-                  <Stack direction={} bgcolor="red" sx={{ margin: "0% 2%" ,
-                  }}>
+                  </AvatarBox>
+                  <CFStack>
                     <Box>
                       <Typography variant="h5"> Customer Feedback</Typography>
                     </Box>
-                    <Box sx={{ display: "flex", flexDirection: "row" }}>
-                      <Image
-                        style={{ margin: "8px 10px" }}
-                        src={Star}
-                        width={19}
-                        height={19}
-                        alt=""
-                      />
+                    <Stack flexDirection="row">
+                      <SImage src={Star} alt="" />
                       <Typography variant="h5">4.9</Typography>
-                      <Typography sx={{ margin: "5px 15px" }} variant="h6">
+                      <ReviewTypography variant="h6">
                         (18.6k Reviews)
-                      </Typography>
-                    </Box>
-                  </Stack>
-                </Stack>
+                      </ReviewTypography>
+                    </Stack>
+                  </CFStack>
+                </AvatarStack>
               </CardContent>
             </Card>
           </Stack>

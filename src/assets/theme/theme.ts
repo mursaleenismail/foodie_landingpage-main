@@ -32,17 +32,18 @@ export function responsiveFontSizes({
 }
 
 const PRIMARY = {
-  lighter: '#6BC785',
-  light: "#C2EFD4",
-  main: '#267D49',
-  dark: "#224F34",
+  lighter: '#5FE26C',
+  light: "#C1F1C6",
+  hoverlight:"#C1F1C6",
+  main: '#39DB4A',
+  dark: "#90BD95",
   darker: '#224F34',
   contrastText: '#FFFFFF',
 };
 
 const SECONDARY = {
-  lighter: '#A3F3BE',
-  light: '#454545',
+  lighter: '#FF6868',
+  light: '#FF7979',
   dark: '#373737',
   contrastText: '#FFFFFF',
 };
@@ -53,6 +54,8 @@ const ELEMENTRY = {
   dark: '#93B9A2',
   contrastText: '#FFFFFF',
 };
+
+
 
 export const COMMON = {
   common: {
@@ -160,7 +163,7 @@ export const theme = createTheme({
     },
     body1: {
       lineHeight: 1.5,
-      fontSize: pxToRem(17),
+      fontSize: pxToRem(20),
     },
     body2: {
       lineHeight: 22 / 14,

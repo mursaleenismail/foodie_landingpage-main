@@ -19,7 +19,8 @@ const Categories = () => {
   return (
     <Box
       sx={{
-        // padding: "45px 0%",
+      margin:"10px 20px" ,
+        padding:"0px",
       }}
     >
       <Box>
@@ -30,23 +31,26 @@ const Categories = () => {
         <Grid
           container
           spacing={2}
-          sx={{
-            // margin: "1% 20px",
-          }}
+          gap={15}
+          sx={{ 
+             justifyContent: "center",
+          alignItems: "center",
+        }}
+  
         >
-          <Grid item xl={3} lg={3} md={3} sm={6} xs={12}>
+          <Grid xl={2} lg={3} md={3} sm={6} xs={12}>
             <PCCard image={Burger} title="Main Dish" subtitle="(86 dishes)" />
           </Grid>
 
-          <Grid item xl={3} lg={3} md={3} sm={6} xs={12}>
+          <Grid xl={2}  lg={3} md={3} sm={6} xs={12}>
           <PCCard image={Sandwitch} title="Break Fast" subtitle="(12 break fast)" />
           </Grid>
 
-          <Grid item xl={3} lg={3} md={3} sm={6} xs={12}>
+          <Grid xl={2}  lg={3} md={3} sm={6} xs={12}>
           <PCCard image={IceCream} title="Dessert" subtitle="(48 dessert)" />
           </Grid>
 
-          <Grid item xl={3} lg={3} md={3} sm={6} xs={12}>
+          <Grid xl={2} lg={3} md={3} sm={6} xs={12}>
           <PCCard image={Juice} title="Browse All" subtitle="(255 Items)" />
           </Grid>
         </Grid>

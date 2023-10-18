@@ -1,7 +1,7 @@
 "use client";
 import { Box, Checkbox, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
-import { OMTypograpghy, SDTypograpghy } from "./styled";
+import { MSTack, MenuGrid, OMTypograpghy, SDTypograpghy } from "./styled";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -17,26 +17,17 @@ const Menu = () => {
   return (
     <div>
       <Box>
-        <Stack sx={{ padding: "0% 3%" }}>
+        <MSTack>
           <SDTypograpghy variant="h6">Special Dishes</SDTypograpghy>
           <OMTypograpghy variant="h2">
             Standout Dishes <br />
             From Our Menu
           </OMTypograpghy>
-        </Stack>
+        </MSTack>
 
         <Stack>
-          <Grid
-            container
-            spacing={0}
-            sx={{
-              justifyContent: "center",
-              alignItems: "center",
-              margin: "1% 0%",
-              padding: "0% 2%",
-            }}
-          >
-            <Grid item xl={2.7} lg={3} md={4} sm={6} xs={12}>
+          <MenuGrid container spacing={0}>
+            <Grid item xl={4} lg={3} md={4} sm={6} xs={12}>
               <MenuCard
                 image={Salad1}
                 title="Fattoush salad"
@@ -46,7 +37,7 @@ const Menu = () => {
               />
             </Grid>
 
-            <Grid item xl={2.7} lg={3} md={4} sm={6} xs={12}>
+            <Grid item xl={4} lg={3} md={4} sm={6} xs={12}>
               <MenuCard
                 image={Salad2}
                 title="Vegetable salad"
@@ -56,17 +47,16 @@ const Menu = () => {
               />
             </Grid>
 
-            <Grid item xl={2.7} lg={3} md={4} sm={6} xs={12}>
-            <MenuCard
+            <Grid item xl={4} lg={3} md={4} sm={6} xs={12}>
+              <MenuCard
                 image={Salad3}
                 title="Egg vegi salad"
                 subtitle="Description of the item"
                 price={23}
                 rating={4.5}
               />
-           
             </Grid>
-          </Grid>
+          </MenuGrid>
         </Stack>
       </Box>
     </div>

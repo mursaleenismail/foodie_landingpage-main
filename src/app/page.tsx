@@ -9,17 +9,21 @@ import Image from "next/image";
 import Services from "@/sections/home/Services/Services";
 import Footer from "@/layouts/Footer/footer";
 import Customer from "@/sections/home/Customer/Customer";
+import { Container } from "@mui/material";
 
 export default function Home() {
   return (
     <Box>
-      {/* <Header /> */}
-      {/* <HomeHero /> */}
-      {/* <Categories /> */}
+      <Container>
+      <Header />
+      <HomeHero />
+      <Categories />
       <Menu />
       <Customer/>
       <Services/>
       <Footer/>
+      </Container>
+     
     </Box>
   );
 }
