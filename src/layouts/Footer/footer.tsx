@@ -48,7 +48,7 @@ const Footer = () => {
             </Stack>
           </Grid>
 
-          <Grid item xl={3} lg={2} md={2} sm={6} xs={12}>
+          <Grid item xl={2} lg={2} md={2} sm={6} xs={12}>
             <Stack>
               <List>
                 <ListItem
@@ -84,7 +84,7 @@ const Footer = () => {
             </Stack>
           </Grid>
 
-          <Grid xl={2} lg={3} md={2} sm={6} xs={12}>
+          <Grid xl={2} lg={2} md={2} sm={6} xs={12}>
             <Stack>
               <List>
                 <ListItem>
@@ -117,7 +117,7 @@ const Footer = () => {
             </Stack>
           </Grid>
 
-          <Grid xl={2} lg={3} md={2} sm={6} xs={12}>
+          <Grid xl={2} lg={2} md={2} sm={6} xs={12}>
             <Stack>
               <List>
                 <ListItem>

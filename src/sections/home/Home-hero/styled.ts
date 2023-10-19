@@ -48,20 +48,16 @@ export const ImageBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     height: "350px",
   },
-  
 }));
 
 export const MainImage = styled(Image)(({ theme }) => ({
   position: "absolute",
-  // top: "56%",
   left: "-10%",
-  // leftt: "2%",
   bottom: "13px",
 }));
 
 export const RenderFoodStack = styled(Stack)(({ theme }) => ({
   position: "absolute",
-  //    display:"block",
 
   //  TOP ///..
 
@@ -74,7 +70,7 @@ export const RenderFoodStack = styled(Stack)(({ theme }) => ({
     left: "42%",
   },
   [theme.breakpoints.down("lg")]: {
-    top: "64%",
+    top: "74%",
     left: "38%",
   },
   [theme.breakpoints.down("md")]: {
@@ -82,14 +78,13 @@ export const RenderFoodStack = styled(Stack)(({ theme }) => ({
     left: "0%",
   },
 
-
   // [theme.breakpoints.up("xl")]: {
   //   top: "56%",
   // },
   // [theme.breakpoints.up("lg")]: {
   //   top: "62%",
   // },
- 
+
   // [theme.breakpoints.down("lg")]: {
   //   top: "47%",
   // },
@@ -97,21 +92,17 @@ export const RenderFoodStack = styled(Stack)(({ theme }) => ({
   //   top: "108%",
   // },
 
+  //  ___LEFT////
+  //  [theme.breakpoints.up("lg")]: {
+  //   left: "42%",
+  // },
+  //   [theme.breakpoints.down("lg")]: {
+  //     left: "38%",
+  //   },
+  //   [theme.breakpoints.down("sm")]: {
+  //     left: "0%",
+  //   },
 
- //  ___LEFT////
-//  [theme.breakpoints.up("lg")]: {
-//   left: "42%",
-// },
-//   [theme.breakpoints.down("lg")]: {
-//     left: "38%",
-//   },
-//   [theme.breakpoints.down("sm")]: {
-//     left: "0%",
-//   },
-
-
-
-  
   // DIRECTION//
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
@@ -134,8 +125,6 @@ export const RenderFoodStack = styled(Stack)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
   },
- 
-  
 }));
 
 export const CBox1 = styled(Stack)(({ theme }) => ({
@@ -153,8 +142,7 @@ export const SNBox = styled(Box)(({ theme }) => ({
 }));
 
 export const SNTypography = styled(Typography)(({ theme }) => ({
-    marginBottom: "10px",
-    fontSize: "19px",
-    fontWeight: "850px",
-  }));
-
+  marginBottom: "10px",
+  fontSize: "19px",
+  fontWeight: "850px",
+}));
