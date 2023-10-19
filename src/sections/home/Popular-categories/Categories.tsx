@@ -27,7 +27,10 @@ const Categories = () => {
         <CFTypograpghy variant="h6"> Customer Favorites</CFTypograpghy>
         <PCTypograpghy variant="h2">Popular Categories</PCTypograpghy>
       </Box>
-      <Stack>
+      <Stack sx={{ 
+             justifyContent: "center",
+          alignItems: "center",
+        }} >
         <Grid
           container
           spacing={2}

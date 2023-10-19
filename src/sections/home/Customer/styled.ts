@@ -39,11 +39,11 @@ export const CookImage = styled(Image)(({ theme }) => ({
   right: "1%",
   bottom: "2px",
   width: "505px",
-  height: "670px",
+  height: "730px",
 }));
 
 export const CICardContent = styled(CardContent)(({ theme }) => ({
-  padding: "45% 0% 0% 0%",
+  padding: "60% 0% 0% 0%",
   [theme.breakpoints.up("sm")]: {
     display: "block",
   },

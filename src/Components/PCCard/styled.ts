@@ -20,6 +20,7 @@ export const PCRCard = styled(Card)(({}) => ({
   width: "315px",
   height: "315px",
   borderRadius: "40px",
+  marginLeft:"5%"
   // margin: "4% 5%",
 }));
 

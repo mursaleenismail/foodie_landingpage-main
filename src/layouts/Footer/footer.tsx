@@ -48,7 +48,7 @@ const Footer = () => {
             </Stack>
           </Grid>
 
-          <Grid item xl={2} lg={2} md={2} sm={6} xs={12}>
+          <Grid item xl={3} lg={2} md={2} sm={6} xs={12}>
             <Stack>
               <List>
                 <ListItem
@@ -84,7 +84,7 @@ const Footer = () => {
             </Stack>
           </Grid>
 
-          <Grid xl={2} lg={2} md={2} sm={6} xs={12}>
+          <Grid xl={2} lg={3} md={2} sm={6} xs={12}>
             <Stack>
               <List>
                 <ListItem>
@@ -117,7 +117,7 @@ const Footer = () => {
             </Stack>
           </Grid>
 
-          <Grid xl={2} lg={2} md={2} sm={6} xs={12}>
+          <Grid xl={2} lg={3} md={2} sm={6} xs={12}>
             <Stack>
               <List>
                 <ListItem>
@@ -161,7 +161,7 @@ const Footer = () => {
 
           <Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
             <CopyRightStack flex={4}>
-              <Typography>
+              <Typography variant="body2">
                 Copyright <Image src={CRIcon} width={17} height={17} alt="" />{" "}
                 2023 Dscode | All rights reserved
               </Typography>

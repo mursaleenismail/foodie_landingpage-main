@@ -9,16 +9,16 @@ import {
   export const CFTypograpghy = styled(Typography)(({}) => ({
     color: COMMON.secondary.lighter,
     textAlign: "center",
-    marginBottom: 15,
-    marginTop: 30,
+    marginBottom: "2px",
+    marginTop: "65px",
     fontFamily: primaryFont.style.fontFamily,
   }));
 
   export const PCTypograpghy = styled(Typography)(({}) => ({
     color: COMMON.common.black,
     textAlign: "center",
-    marginBottom: 15,
-    marginTop: 30,
+    marginBottom: "50px",
+    marginTop: "30px",
     fontFamily: primaryFont.style.fontFamily,
   }));
 

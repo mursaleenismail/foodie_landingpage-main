@@ -34,7 +34,7 @@ const Customer = () => {
   return (
     <Box sx={{margin:"30px 0px"}}>
       <Grid container spacing={1} sx={{ flexGrow: 1 }}>
-        <Grid item xl={6} lg={6} md={5} sm={12} xs={12}>
+        <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
           <Stack>
             <Card elevation={0}>
               <CICardContent>
@@ -51,7 +51,7 @@ const Customer = () => {
           </Stack>
         </Grid>
 
-        <Grid item xl={6} lg={6} md={7} sm={12} xs={12}>
+        <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
           <Stack>
             <Card elevation={0}>
               <CardContent sx={{ padding: "17% 0%", margin: "2% 5%" }}>

@@ -79,8 +79,8 @@ export const FBImage = styled(Image)(({ theme }) => ({
   marginRight: "20px",
   transition: "background-color 0.3s ease, border-radius 0.3s ease",
   cursor: "pointer",
-  width: "35px",
-  height: "35px",
+  width: "25px",
+  height: "25px",
   "&:hover": {
     backgroundColor: "#39DB4A",
     borderRadius: "80px",
@@ -89,41 +89,40 @@ export const FBImage = styled(Image)(({ theme }) => ({
 
 export const InstaImage = styled(Image)(({ theme }) => ({
   marginRight: "20px",
-  transition: "background-color 0.3s ease, border-radius 0.3s ease",
-  cursor: "pointer",
-  width: "35px",
-  height: "35px",
+  position: "relative",
+  width: "25px", 
+  height: "25px",
+  borderRadius: "100%",
+  transition: "background-color 0.3s", 
   "&:hover": {
     backgroundColor: "#39DB4A",
-    borderRadius: "40px",
-    width: "45px",
-    height: "45px"
   },
+
 }));
 
 export const TwitterImage = styled(Image)(({ theme }) => ({
   marginRight: "20px",
   position: "relative",
-  width: "35px",
-  height: "35px",
+  width: "25px", 
+  height: "25px",
+  borderRadius: "100%",
+  transition: "background-color 0.3s", 
   "&:hover": {
     backgroundColor: "#39DB4A",
-    borderRadius: "40px",
-    width: "45px",
-    height: "45px"
   },
+
 }));
 export const YoutubeImage = styled(Image)(({ theme }) => ({
   marginRight: "20px",
   position: "relative",
-  width: "35px",
-  height: "35px",
+  width: "25px", 
+  height: "25px",
+  borderRadius: "100%",
+  transition: "background-color 0.3s", 
   "&:hover": {
     backgroundColor: "#39DB4A",
-    borderRadius: "40px",
-    width: "45px",
-  height: "45px",
   },
+
 }));
 
 
