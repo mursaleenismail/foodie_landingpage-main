@@ -62,17 +62,28 @@ export const RenderFoodStack = styled(Stack)(({ theme }) => ({
   //  TOP ///..
 
   [theme.breakpoints.up("xl")]: {
-    top: "56%",
+    top: "65%",
     left: "42%",
   },
+
   [theme.breakpoints.up("lg")]: {
-    top: "62%",
+    top: "64%",
     left: "42%",
   },
-  [theme.breakpoints.down("lg")]: {
-    top: "74%",
-    left: "38%",
+
+
+  [theme.breakpoints.only("lg")]: {
+    top: "88%",
+    left: "45%",
   },
+
+
+
+  [theme.breakpoints.down("lg")]: {
+    top: "66%",
+    left: "34%",
+  },
+
   [theme.breakpoints.down("md")]: {
     top: "108%",
     left: "0%",

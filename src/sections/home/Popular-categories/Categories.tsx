@@ -34,7 +34,7 @@ const Categories = () => {
         <Grid
           container
           spacing={2}
-          gap={15}
+          gap={16}
           sx={{ 
              justifyContent: "center",
           alignItems: "center",

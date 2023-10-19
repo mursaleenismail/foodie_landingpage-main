@@ -3,14 +3,9 @@ import { Box, Checkbox, IconButton, Stack, Typography } from "@mui/material";
 import React from "react";
 import { MSTack, MenuGrid, OMTypograpghy, SDTypograpghy } from "./styled";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Image from "next/image";
-import Star from "../../../../public/Home-HeroIcons/fi-sr-star.svg";
 import Salad1 from "../../../../public/Menu/Fattoush salad.svg";
 import Salad2 from "../../../../public/Menu/Vegetable salad.svg";
 import Salad3 from "../../../../public/Menu/Egg salad.svg";
-import { Favorite, FavoriteBorder } from "@mui/icons-material";
 import MenuCard from "@/Components/MenuCard/MenuCard";
 
 const Menu = () => {
@@ -27,7 +22,7 @@ const Menu = () => {
 
         <Stack>
           <MenuGrid container spacing={0}>
-            <Grid item xl={4} lg={3} md={6} sm={6} xs={12}>
+            <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
               <MenuCard
                 image={Salad1}
                 title="Fattoush salad"
@@ -37,7 +32,7 @@ const Menu = () => {
               />
             </Grid>
 
-            <Grid item xl={4} lg={3} md={6} sm={6} xs={12}>
+            <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
               <MenuCard
                 image={Salad2}
                 title="Vegetable salad"
@@ -47,7 +42,7 @@ const Menu = () => {
               />
             </Grid>
 
-            <Grid item xl={4} lg={3} md={6} sm={6} xs={12}>
+            <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
               <MenuCard
                 image={Salad3}
                 title="Egg vegi salad"
