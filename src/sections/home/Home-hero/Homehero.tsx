@@ -101,7 +101,7 @@ const HomeHero = () => {
           </ImageBox>
 
           <RenderFoodStack  direction="column" 
-            // sx={{display:{sm:"block",xs:"none"}}}
+     
             >
             <RenderFoodCard
           

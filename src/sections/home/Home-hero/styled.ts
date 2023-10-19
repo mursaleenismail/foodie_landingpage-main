@@ -53,61 +53,88 @@ export const ImageBox = styled(Box)(({ theme }) => ({
 
 export const MainImage = styled(Image)(({ theme }) => ({
   position: "absolute",
-  right: "1%",
+  // top: "56%",
+  left: "-10%",
+  // leftt: "2%",
   bottom: "13px",
 }));
 
 export const RenderFoodStack = styled(Stack)(({ theme }) => ({
   position: "absolute",
-  // display:"none",
+  //    display:"block",
 
-// WIDTH//
-  [theme.breakpoints.up("sm")]: {
-    width: "700px",
-  },
+  //  TOP ///..
 
-  [theme.breakpoints.down("sm")]: {
-    width: "420px",
-  },
-
-  //  ___LEFT////
   [theme.breakpoints.up("xl")]: {
-    left: "55%",
+    top: "56%",
+    left: "42%",
   },
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("lg")]: {
+    top: "62%",
+    left: "42%",
+  },
+  [theme.breakpoints.down("lg")]: {
+    top: "64%",
     left: "38%",
   },
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
+    top: "108%",
     left: "0%",
   },
 
 
-  //  TOP ///
-  [theme.breakpoints.up("xl")]: {
-    top: "62%",
-  },
+  // [theme.breakpoints.up("xl")]: {
+  //   top: "56%",
+  // },
+  // [theme.breakpoints.up("lg")]: {
+  //   top: "62%",
+  // },
  
-  [theme.breakpoints.down("lg")]: {
-    top: "62%",
-  },
-  [theme.breakpoints.down("md")]: {
-    top: "130%",
-  },
-  [theme.breakpoints.down("sm")]: {
-    left: "38%",
-  },
-  
+  // [theme.breakpoints.down("lg")]: {
+  //   top: "47%",
+  // },
+  // [theme.breakpoints.down("md")]: {
+  //   top: "108%",
+  // },
 
- 
- 
+
+ //  ___LEFT////
+//  [theme.breakpoints.up("lg")]: {
+//   left: "42%",
+// },
+//   [theme.breakpoints.down("lg")]: {
+//     left: "38%",
+//   },
+//   [theme.breakpoints.down("sm")]: {
+//     left: "0%",
+//   },
+
+
+
   
   // DIRECTION//
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+  },
   [theme.breakpoints.up("sm")]: {
     flexDirection: "row",
   },
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
   },
+  // WIDTH//
+  [theme.breakpoints.up("sm")]: {
+    width: "360px",
+  },
+
+  [theme.breakpoints.down("sm")]: {
+    width: "420px",
+  },
+
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+ 
   
 }));
 
