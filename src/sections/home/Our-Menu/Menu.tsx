@@ -27,7 +27,7 @@ const Menu = () => {
 
         <Stack>
           <MenuGrid container spacing={0}>
-            <Grid item xl={4} lg={3} md={4} sm={6} xs={12}>
+            <Grid item xl={4} lg={3} md={6} sm={6} xs={12}>
               <MenuCard
                 image={Salad1}
                 title="Fattoush salad"
@@ -37,7 +37,7 @@ const Menu = () => {
               />
             </Grid>
 
-            <Grid item xl={4} lg={3} md={4} sm={6} xs={12}>
+            <Grid item xl={4} lg={3} md={6} sm={6} xs={12}>
               <MenuCard
                 image={Salad2}
                 title="Vegetable salad"
@@ -47,7 +47,7 @@ const Menu = () => {
               />
             </Grid>
 
-            <Grid item xl={4} lg={3} md={4} sm={6} xs={12}>
+            <Grid item xl={4} lg={3} md={6} sm={6} xs={12}>
               <MenuCard
                 image={Salad3}
                 title="Egg vegi salad"
